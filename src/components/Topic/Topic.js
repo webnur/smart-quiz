@@ -1,9 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Topic.css'
 
 const Topic = ({topic}) => {
-    console.log(topic)
-    const {name, logo, total, id} = topic
+    // console.log(topic)
+    const {name, logo, total, id} = topic;
+    const navigate = useNavigate();
+    const handleQuizzes = () => {
+        navigate(`../topics/${id}`)
+    }
     return (
         <div>
             <div className='single-topic'>
@@ -11,7 +16,7 @@ const Topic = ({topic}) => {
                 <div className='topic-details'>
                     <h6>{name}</h6>
                     <p>total: {total}</p>
-                    <button>Start Quiz</button>
+                    <button onClick={handleQuizzes} >Start Quiz</button>
                 </div>
             </div>
         </div>

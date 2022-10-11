@@ -7,11 +7,15 @@ const Topics = () => {
     const topics = useLoaderData()
     const topicsData = topics.data;
     // console.log(topicsData)
-
+  
     return (
         <div className='all-topics'>
             {
-               topicsData.map(topic => <Topic key={topic.id} topic={topic}></Topic>)
+               topicsData.map(topic => <Topic
+                 key={topic.id}
+                topic={topic}
+                
+                ></Topic>)
             }
         </div>
     );

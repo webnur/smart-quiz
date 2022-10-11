@@ -1,0 +1,22 @@
+.single-topic {
+    border: 2px solid purple;
+    border-radius: 15px;
+    background: rgb(83, 83, 50);
+}
+.single-topic img {
+    width: 270px;
+    height: 270px;
+    text-align: center;
+}
+.topic-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.topic-details button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

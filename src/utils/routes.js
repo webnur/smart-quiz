@@ -3,11 +3,13 @@ import Layout from '../components/Layout/Layout'
 import Topics from "../components/Topics/Topics";
 import Blogs from "../components/Blogs/Blogs";
 import Quizzes from "../components/Quizzes/Quizzes";
+import ErrorPage from "../components/ErrorPage/ErrorPage";
 
 
 const router = createBrowserRouter([
     {
         path: '/',
+        errorElement: <ErrorPage></ErrorPage> ,
         element: <Layout></Layout>,
         children: [
             {

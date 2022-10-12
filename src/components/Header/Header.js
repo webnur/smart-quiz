@@ -24,7 +24,7 @@ const Header = () => {
     return (
         <Navbar bg="primary" expand="lg">
           <Container>
-            <Navbar.Brand href="#" className='logo'>Smart Quiz</Navbar.Brand>
+            <Navbar.Brand className='logo'><Link to='/'>Smart Quiz</Link></Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav

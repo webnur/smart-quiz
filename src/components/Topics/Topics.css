@@ -3,8 +3,28 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
-    width: 95%;
-   margin: 0 auto;
+    /* width: 95%;
+   margin: 0 auto; */
    margin-top: 50px;
     
+}
+
+.bg-image {
+    height: 400px;
+    width: 100%;
+    background-image: url('../../assests/images/quiz-image1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+
+}
+
+.bg-image h2 {
+    text-align: center;
+    padding-top: 184px;
+    font-size: 65px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 13px;
 }

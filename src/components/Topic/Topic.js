@@ -1,4 +1,5 @@
 import React from 'react';
+import { Col } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import './Topic.css'
 
@@ -9,17 +10,19 @@ const Topic = ({topic}) => {
     const handleQuizzes = () => {
         navigate(`../topics/${id}`)
     }
-    return (
-        <div>
-            <div className='single-topic'>
-                <img src={logo} alt="" />
-                <div className='topic-details'>
-                    <h6>{name}</h6>
-                    <p>total: {total}</p>
-                    <button onClick={handleQuizzes} >Start Quiz</button>
+    return (     
+            <Col>
+                <div className='single-topic'>
+                    <div className='quiz-card-image'>
+                        <img src={logo} alt="" />
+                    </div>
+                    <div className='topic-details'>
+                        <h6 className='subject-title'>{name}</h6>
+                        <p className='total-text'>total: {total}</p>
+                        <button onClick={handleQuizzes} >Start Quiz</button>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </Col>
     );
 };
 

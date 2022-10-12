@@ -1,7 +1,8 @@
 
-.logo {
+.logo a{
     color: #fff !important;
     font-weight: 700;
+    text-decoration: none;
 }
 .header {
     display: flex;

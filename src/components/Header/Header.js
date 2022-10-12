@@ -33,8 +33,7 @@ const Header = () => {
                 navbarScroll
               >
                 <div className='main-menu'>
-                    <Link to='/'>Home</Link>
-                    <Link to='/topics'>Topic</Link>
+                    <Link to='/'>Topic</Link>
                     <Link to="/blogs">Blog</Link>
                 </div>
 

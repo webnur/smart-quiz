@@ -5,11 +5,10 @@ import './Quiz.css'
 const Quiz = ({quiz}) => {
     // console.log(quiz)
     const {correctAnswer, id, options, question} = quiz;
-
-   
     return (
         <div>
             <h2>{question}</h2>
+            <p>{correctAnswer}</p>
             {
                 options.map((option, index )=> <Option key={index} option={option} correctAnswer={correctAnswer}></Option>)
             }

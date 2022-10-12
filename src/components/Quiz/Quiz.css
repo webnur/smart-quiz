@@ -1,3 +1,9 @@
 .orange {
     background-color: orange;
 }
+.answer {
+    display: none;
+}
+.active-answer {
+    display: block;
+}

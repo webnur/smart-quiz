@@ -1,3 +1,8 @@
+
+.logo {
+    color: #fff !important;
+    font-weight: 700;
+}
 .header {
     display: flex;
     justify-content: space-between;

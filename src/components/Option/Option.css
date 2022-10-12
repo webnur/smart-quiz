@@ -1,9 +1,17 @@
 .option {
     border: 1px solid blue;
-    padding: 3px 25px;
+    padding: 10px 25px;
     margin: 15px 50px;
     border-radius: 25px;
     cursor: pointer;
+    
+}
+.option p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    letter-spacing: 1px;
 }
 .orange {
     background: orange;

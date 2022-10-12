@@ -1,6 +1,16 @@
 .orange {
     background-color: orange;
 }
+.question-area {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icon {
+    width: 35px;
+    cursor: pointer;
+   color: aqua;
+}
 .answer {
     display: none;
 }

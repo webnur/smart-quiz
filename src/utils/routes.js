@@ -4,6 +4,7 @@ import Topics from "../components/Topics/Topics";
 import Blogs from "../components/Blogs/Blogs";
 import Quizzes from "../components/Quizzes/Quizzes";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
+import Rechart from "../components/Rechart/Rechart";
 
 
 const router = createBrowserRouter([
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
                     return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
                 } ,
                 element: <Quizzes></Quizzes>
+            },
+            {
+                path: '/rechart',
+                loader: async () => fetch('https://openapi.programming-hero.com/api/quiz'),
+                element: <Rechart></Rechart>
             }
         ]
         

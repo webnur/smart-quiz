@@ -34,6 +34,7 @@ const Header = () => {
               >
                 <div className='main-menu'>
                     <Link to='/'>Topic</Link>
+                    <Link to='/rechart'>Statistics</Link>
                     <Link to="/blogs">Blog</Link>
                 </div>
 

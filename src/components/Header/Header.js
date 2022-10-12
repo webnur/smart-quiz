@@ -7,19 +7,6 @@ import Navbar from 'react-bootstrap/Navbar';
 
 
 const Header = () => {
-    // return (
-    //     <nav className='header'>
-    //         <div className='logo'>
-    //             <h4><Link to='/'>Smart Quizzes</Link></h4>
-    //         </div>
-    //         <div className='main-menu'>
-    //             <Link to='/'>Home</Link>
-    //             <Link to='/topics'>Topics</Link>
-    //             <Link to='#'>Statistics</Link>
-    //             <Link to='/blogs'>Blog</Link>
-    //         </div>
-    //     </nav>
-    // );
 
     return (
         <Navbar bg="primary" expand="lg">
@@ -33,7 +20,7 @@ const Header = () => {
                 navbarScroll
               >
                 <div className='main-menu'>
-                    <Link to='/'>Topic</Link>
+                    <Link to='/'>Topics</Link>
                     <Link to='/rechart'>Statistics</Link>
                     <Link to="/blogs">Blog</Link>
                 </div>

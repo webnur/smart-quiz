@@ -7,7 +7,6 @@ import './Quizzes.css'
 const Quizzes = () => {
     const data = useLoaderData()
     const quizzes = data.data.questions;
-    console.log(data.data.name)
     return (
             <Container className='my-5'>
                 <h2 className='quiz-page-title'>Subject is {data.data.name}</h2>
